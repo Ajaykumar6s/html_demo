@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="madan.jpg" />
+    <title>Scratch</title>
+  </head>
+  <body>
+    <h1>This is an h1 heading</h1>
+    <h2>This is an h2 heading</h2>
+    <h3>This is an h3 heading</h3>
+    <h4>This is an h4 heading</h4>
+    <h5>This is an h5 heading</h5>
+    <hr />
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit
+      eligendi ducimus officia tempore unde consequatur excepturi harum vitae
+      optio ipsum? Omnis blanditiis quibusdam repellendus velit nemo veniam
+      ipsam molestiae. Maiores.
+    </p>
+    <!--This is a COMMENT-->
+    <a href="http://www.google.com/" target="_blank" title="Goes to google"
+      >Click me</a
+    >
+    <br />
+    <a href="mailto:ajaykumarfor007@gmail.com">Mail</a><br />
+    <hr />
+    <audio controls autoplay muted loop>
+      <source src="Ethir Neechal.mp3" type="audio/mpeg" />
+    </audio>
+    <br />
+    <hr />
+    <video controls autoplay height="200" width="400"></video>
+    <br>
+    <p>This is normal Text</p>
+    <p>This is <b>Bold</b> Text</p>
+    <p>This is <i>Italic</i> Text</p>
+    <p>This is <u>Underline</u> Text</p>
+    <p>This is <del>Delete</del> Text</p>
+    <p>This is <big>Big</big> Text</p>
+    <p>This is <small>Small</small> Text</p>
+    <p>This is <sub>Subscript</sub> Text</p>
+    <p>This is <sup>Superscript</sup> Text</p>
+    <p>This is <tt>Monospace</tt> Text</p>
+    <p>This is <mark style="background-color: lightblue;"> normal</mark> Text</p>
+    <br><hr>
+    <h1><span style="background-color: antiquewhite;">This is a span title</span></h1>
+    <h1><div style="background-color: aqua;">This is a div title</div>
+    </h1>
+    <p><span style="background-color: yellowgreen;">This is span sentence</span></p>
+    <p><div style="background-color: yellow;">This is a div sentence</div></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusamus laudantium id accusantium rem ipsam et. <span style="background-color: aquamarine;"> Laboriosam in id ratione delectus ex, consectetur voluptatum nobis rem!</span> Explicabo minima laborum maxime!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint accusamus laudantium id accusantium rem ipsam et. Laboriosam in id ratione delectus ex,<div style="background-color: tomato;">consectetur voluptatum nobis rem! Explicabo minima laborum maxime!</div></p>
+    <br><br>
+   <hr>
+   <br>
+   <!-- UNORDERED LIST -->
+   <ul>
+    <h1>Groceries</h1>
+    <li>Milk</li>
+    <li>Eggs</li>
+    <li>Bread</li>
+    <li>Coffee suplies</li>
+    <ul>
+      <li>Coffee Beans</li>
+      <li>Creamer</li>
+      <li>Sugar</li>
+    </ul>
+   </ul>
+   <!-- ORDERED LIST -->
+   <ol>
+    <h1>To do list</h1>
+    <li>Eat breakfast</li>
+    <li>Go to class</li>
+    <li>walk dog</li>
+    <li>Work</li>
+   </ol>
+   <!-- DESCRIPTION LIST-->
+   <dl style="background-color: wheat;
+   border: solid;
+   border-radius: 25px;
+   padding-left: 20px;
+   padding-bottom: 20px;
+   ">
+    <u><h4 style="font-style: italic;">Mythical creature</h4></u>
+    <dt>Dragon</dt>
+    <dd>A mythical monster resembling a giant reptiles</dd>
+    <dt>Phoenix</dt>
+    <dd>an immortal bird associated with greek mythology</dd>
+    <dt>Vampire</dt>
+    <dd>a mythical creature</dd>
+    <dt>Warewolf</dt>
+    <dd>an individual that can shapeshift into a wolf </dd>
+   </dl>
+   <br>
+   <hr>
+   <h3>Store Hours</h3>
+   <table border="1" bgcolor="black">
+    <tr align="center" style="background-color: antiquewhite ;">
+      <th width="100">Sunday</th>
+      <th width="100">Monday</th>
+      <th width="100">Tuesday</th>
+      <th width="100">Wednesday</th>
+      <th width="100">Thursday</th>
+      <th width="100">Friday</th>
+      <th width="100">Saturday</th>
+    </tr>
+    <tr align="center" style="background-color:violet;">
+      <td>Closed</td>
+      <td>9-5</td>
+      <td>9-5</td>
+      <td>9-5</td>
+      <td>9-5</td>
+      <td>9-5</td>
+      <td>9-5</td>
+    </tr>
+   </table><br>
+   <hr>
+   <a href="page2.html"><button style="font-size: 25px;
+   background-color: lightgray;
+   color:steelblue;
+   border-radius: 20px;
+   cursor: pointer;
+   width: 300px;
+   margin-bottom: 20px;"> Click me</button></a>
+   <br>
+   <button onclick="dosomething()" style="font-size: 30px;border-radius: 40px;width: 300px;padding: 20px;background-color: antiquewhite;">click me</button>
+   <p id="greeting">Hello</p>
+   <script>
+    function dosomething(){
+      document.getElementById("greeting").innerHTML="Goodboy";
+
+    }
+   </script>
+   <hr>
+  <form action="index.php" method="post" enctype="multipart/form-data">
+
+    <label for="Username">Username:</label>
+    <input type="text" id="Username" placeholder="Enter your name :)" required minlength="8" maxlength="15">
+
+    <br>
+
+    <label for="password">password:</label>
+    <input type="password" id="password"  placeholder="Enter password" required minlength="5" maxlength="10">
+    
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required placeholder="Enter the mail I'd">
+    
+    <br>
+
+    <label for="phone">Phone#:</label>
+    <input type="tel" id="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"placeholder="123-456-7890" >
+    
+    <br>
+
+    <label for="bday"> Birthday:</label>
+    <input type="date" id="bday">
+
+    <br>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" min="0" max="99">
+
+    <br>
+
+    <label for="sex">Sex:</label>
+    <input type="radio" id="male" value="male" name="sex">
+    <label for="male">Male</label>
+    <input type="radio" id="female" value="female" name="sex">
+    <label for="female">Female</label>
+    <input type="radio" id="others" value="others" name="sex">
+    <label for="others">Others</label>
+
+    <br>
+
+    <label for="payment">Payment:</label>
+    <select name="" id="">
+      <option value="Visa">Visa</option>
+      <option value="Mastercard">Mastercard</option>
+      <option value="Giftcard">Giftcard</option>
+    </select>
+
+    <br>
+
+    <label for="subcribe">Subcribe:</label>
+    <input type="checkbox" id="subcribe"> <br>
+
+    <label for="textarea">Textarea:</label>
+    <textarea id="textarea" rows="3" cols="25"></textarea>
+
+    <br>
+
+    <label for="file">File:</label>
+    <input type="file" id="file" accept="pdf">
+
+    <br>
+
+
+    <input type="submit">
+    <input type="reset" >
+
+  </form>
+
+  </body>
+</html>
+
+
